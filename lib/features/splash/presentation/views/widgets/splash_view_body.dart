@@ -1,5 +1,10 @@
-import 'package:bookly_app/features/splash/presention/views/widgets/text_slide_animation.dart';
+import 'package:bookly_app/core/utlis/assets_data.dart';
+import 'package:bookly_app/features/home/presentation/views/home_view.dart';
+import 'package:bookly_app/features/splash/presentation/views/widgets/text_slide_animation.dart';
 import 'package:flutter/material.dart';
+import 'package:get/get.dart';
+
+import '../../../../../constants.dart';
 
 class SplashViewBody extends StatefulWidget {
   const SplashViewBody({super.key});
@@ -17,6 +22,13 @@ class _SplashViewBodyState extends State<SplashViewBody>
   void initState() {
     super.initState();
     initSlideAnimation();
+    navigateToHome();
+  }
+
+  void navigateToHome() {
+    Future.delayed(const Duration(seconds: 3), () {
+      Get.off(const HomeView(), transition: Transition.fade, duration: kTransitionDuration);
+    },);
   }
 
   @override
@@ -40,7 +52,7 @@ class _SplashViewBodyState extends State<SplashViewBody>
       crossAxisAlignment: CrossAxisAlignment.stretch,
       mainAxisAlignment: MainAxisAlignment.center,
       children: [
-        Image.asset("assets/images/BOOKLYlogo.png"),
+        Image.asset(AssetsData.logo),
         TextSlideAnimation(slidingAnimation: slidingAnimation),
       ],
     );
