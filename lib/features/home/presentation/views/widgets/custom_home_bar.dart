@@ -11,7 +11,7 @@ class CustomHomeBar extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Padding(
-      padding: const EdgeInsets.symmetric(vertical: 36.0),
+      padding: const EdgeInsets.only(top: 36.0, bottom: 30),
       child: Row(
         crossAxisAlignment: CrossAxisAlignment.center,
         children: [
