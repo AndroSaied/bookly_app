@@ -8,15 +8,15 @@ class HomeView extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return const Scaffold(
-      body: Padding(
-        padding: EdgeInsets.symmetric(horizontal: 16),
-        child: Column(
+      body: Column(
           children: [
-            CustomHomeBar(),
+            Padding(
+              padding: EdgeInsets.symmetric(horizontal: 30),
+              child: CustomHomeBar(),
+            ),
             HomeViewBody(),
           ],
         ),
-      ),
     );
   }
 }
