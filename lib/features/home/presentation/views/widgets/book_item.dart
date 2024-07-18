@@ -6,11 +6,10 @@ import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 import 'package:go_router/go_router.dart';
 
-import '../../../../../core/utils/assets_data.dart';
 import 'book_rating.dart';
 
-class BestSellerItem extends StatelessWidget {
-  const BestSellerItem({super.key});
+class BookItem extends StatelessWidget {
+  const BookItem({super.key});
 
   @override
   Widget build(BuildContext context) {
@@ -20,7 +19,7 @@ class BestSellerItem extends StatelessWidget {
       },
       child: Row(
         children: [
-          SizedBox(
+          const SizedBox(
             height: 110,
             child: BookImage(),
           ),
