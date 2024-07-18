@@ -1,7 +1,7 @@
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 
-import '../../../../../core/utlis/text_styles.dart';
+import '../../../../../core/utils/text_styles.dart';
 
 class BookRating extends StatelessWidget {
   const BookRating({
@@ -11,12 +11,8 @@ class BookRating extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return const Row(
+      mainAxisAlignment: MainAxisAlignment.center,
       children: [
-        Text(
-          "19.99 €",
-          style: TextStyles.textStyle20,
-        ),
-        Spacer(),
         Icon(
           CupertinoIcons.star_fill,
           color: Color(0xffFFDD4F),

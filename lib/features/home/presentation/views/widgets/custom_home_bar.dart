@@ -1,7 +1,7 @@
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 
-import '../../../../../core/utlis/assets_data.dart';
+import '../../../../../core/utils/assets_data.dart';
 
 class CustomHomeBar extends StatelessWidget {
   const CustomHomeBar({
