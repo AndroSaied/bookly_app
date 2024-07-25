@@ -3,13 +3,15 @@ import 'package:bookly_app/features/home/presentation/views/widgets/book_image.d
 import 'package:flutter/material.dart';
 
 class CustomBookItem extends StatelessWidget {
-  const CustomBookItem({super.key});
+  const CustomBookItem({super.key, required this.imageUrl});
+
+  final String imageUrl;
 
   @override
   Widget build(BuildContext context) {
-    return const SizedBox(
+    return SizedBox(
       height: 220,
-      child: BookImage(),
+      child: BookImage(imageUrl: imageUrl,),
     );
   }
 }

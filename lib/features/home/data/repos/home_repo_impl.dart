@@ -13,7 +13,7 @@ class HomeRepoImpl implements HomeRepo {
 
       List<BookModel> newestBooks = [];
       for(var item in data["items"]) {
-        newestBooks.add(item);
+        newestBooks.add(BookModel.fromJson(item));
       }
 
       return right(newestBooks);
@@ -35,7 +35,7 @@ class HomeRepoImpl implements HomeRepo {
 
       List<BookModel> books = [];
       for(var item in data["items"]) {
-        books.add(item);
+        books.add(BookModel.fromJson(item));
       }
 
       return right(books);

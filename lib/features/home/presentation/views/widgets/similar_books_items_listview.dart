@@ -11,7 +11,9 @@ class SimilarBookItemsListview extends StatelessWidget {
       itemBuilder: (context, index) {
         return const Padding(
           padding: EdgeInsets.only(right: 10.0),
-          child: CustomBookItem(),
+          child: CustomBookItem(
+            imageUrl: "https://c.pxhere.com/photos/d1/ac/cascade_cloudy_environment_falls_lake_landscape_mountain_range_mountains-1174399.jpg!d",
+          ),
         );
       },
     );

@@ -21,7 +21,9 @@ class BookItem extends StatelessWidget {
         children: [
           const SizedBox(
             height: 110,
-            child: BookImage(),
+            child: BookImage(
+              imageUrl: "https://c.pxhere.com/photos/d1/ac/cascade_cloudy_environment_falls_lake_landscape_mountain_range_mountains-1174399.jpg!d",
+            ),
           ),
           const SizedBox(width: 30,),
           Expanded(

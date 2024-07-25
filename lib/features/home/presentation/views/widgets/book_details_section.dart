@@ -14,7 +14,9 @@ class BookDetailsSection extends StatelessWidget {
       children: [
         SizedBox(
           width: MediaQuery.of(context).size.width * 0.36,
-          child: const BookImage(),
+          child: const BookImage(
+            imageUrl: "https://c.pxhere.com/photos/d1/ac/cascade_cloudy_environment_falls_lake_landscape_mountain_range_mountains-1174399.jpg!d",
+          ),
         ),
         const SizedBox(height: 35,),
         const Text(
