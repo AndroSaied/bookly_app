@@ -1,6 +1,7 @@
+import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 
-import '../../../../home/presentation/views/widgets/book_item.dart';
+import '../../../../home/presentation/views/widgets/book_newest_item.dart';
 
 class SearchResultListview extends StatelessWidget {
   const SearchResultListview({super.key});
@@ -14,7 +15,8 @@ class SearchResultListview extends StatelessWidget {
       itemBuilder: (context, index) {
         return const Padding(
           padding: EdgeInsets.symmetric(vertical: 10.0),
-          child: BookItem(),
+          // child: BookNewestItem(),
+          child: Text("data"),
         );
       },
     );

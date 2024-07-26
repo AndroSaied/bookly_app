@@ -1,3 +1,4 @@
+import 'package:bookly_app/features/home/data/models/book_model/book_model.dart';
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 
@@ -5,8 +6,10 @@ import '../../../../../core/utils/text_styles.dart';
 
 class BookRating extends StatelessWidget {
   const BookRating({
-    super.key,
+    super.key, required this.rating, required this.count,
   });
+
+  final int rating, count;
 
   @override
   Widget build(BuildContext context) {

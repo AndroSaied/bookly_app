@@ -15,7 +15,7 @@ class HomeView extends StatelessWidget {
     return MultiBlocProvider(
       providers: [
         BlocProvider(create: (context) => BooksCubit(getIt.get<HomeRepoImpl>())..fetchBooks(),),
-        BlocProvider(create: (context) => NewestBooksCubit(getIt.get<HomeRepoImpl>()),),
+        BlocProvider(create: (context) => NewestBooksCubit(getIt.get<HomeRepoImpl>())..fetchNewestBooks(),),
       ],
       child: const Scaffold(
         body: Column(

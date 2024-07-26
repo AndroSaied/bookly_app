@@ -30,7 +30,7 @@ class BookDetailsSection extends StatelessWidget {
               .copyWith(fontWeight: FontWeight.w500, fontStyle: FontStyle.italic, color: Colors.white.withOpacity(0.7),),
         ),
         const SizedBox(height: 12,),
-        const BookRating(),
+        // const BookRating(),
         const SizedBox(height: 30,),
         const BookActionButtons()
       ],
