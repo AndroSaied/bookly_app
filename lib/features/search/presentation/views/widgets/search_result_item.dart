@@ -7,11 +7,11 @@ import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 import 'package:go_router/go_router.dart';
 
-class BookNewestItem extends StatelessWidget {
-  const BookNewestItem({super.key, required this.book, this.onTap});
+class SearchResultItem extends StatelessWidget {
+  const SearchResultItem({super.key, required this.book, this.onTap});
 
-   final BookModel book;
-   final void Function()? onTap;
+  final BookModel book;
+  final void Function()? onTap;
 
   @override
   Widget build(BuildContext context) {
@@ -41,7 +41,7 @@ class BookNewestItem extends StatelessWidget {
                 ),
                 const SizedBox(height: 2,),
                 Text(
-                  book.volumeInfo.authors![0],
+                  book.volumeInfo.authors?[0] ?? "",
                   style: TextStyles.textStyle14.copyWith(fontWeight: FontWeight.w500),
                 ),
                 const SizedBox(height: 2,),
@@ -49,18 +49,6 @@ class BookNewestItem extends StatelessWidget {
                   "00.00 €",
                   style: TextStyles.textStyle20,
                 ),
-                // Row(
-                //   children: [
-                //     const Text(
-                //       "00.00 €",
-                //       style: TextStyles.textStyle20,
-                //     ),
-                //     const Spacer(),
-                //     BookRating(
-                //       book: book.volumeInfo.,
-                //     ),
-                //   ],
-                // ),
               ],
             ),
           ),

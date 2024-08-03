@@ -10,7 +10,6 @@ class HomeViewBody extends StatelessWidget {
   Widget build(BuildContext context) {
     return const Expanded(
       child: CustomScrollView(
-
         slivers: [
           SliverToBoxAdapter(
             child: Padding(
