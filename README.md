@@ -1,16 +1,5 @@
 # bookly_app
 
-A new Flutter project.
+A new Flutter project bboks app.
 
-## Getting Started
-
-This project is a starting point for a Flutter application.
-
-A few resources to get you started if this is your first Flutter project:
-
-- [Lab: Write your first Flutter app](https://docs.flutter.dev/get-started/codelab)
-- [Cookbook: Useful Flutter samples](https://docs.flutter.dev/cookbook)
-
-For help getting started with Flutter development, view the
-[online documentation](https://docs.flutter.dev/), which offers tutorials,
-samples, guidance on mobile development, and a full API reference.
+![70e7898ce394f24da11a399974e5e461.png](https://imgg.io/images/2024/08/05/70e7898ce394f24da11a399974e5e461.png)
